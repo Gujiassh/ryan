@@ -1,29 +1,33 @@
 {
-  "private": true,
-  "author": "baron.bai <baron.bai@imile.me>",
-  "scripts": {
-    "dev": "max dev",
-    "build": "max build",
-    "format": "prettier --cache --write .",
-    "prepare": "husky",
-    "postinstall": "max setup",
-    "setup": "max setup",
-    "start": "npm run dev"
-  },
-  "dependencies": {
-    "@ant-design/icons": "^5.3.7",
-    "@ant-design/pro-components": "^2.7.10",
-    "@umijs/max": "^4.3.1",
-    "antd": "^5.19.1"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "husky": "^9.0.11",
-    "lint-staged": "^15.2.7",
-    "prettier": "^3.3.2",
-    "prettier-plugin-organize-imports": "^4.0.0",
-    "prettier-plugin-packagejson": "^2.5.0",
-    "typescript": "^5.5.3"
-  }
+	"private": true,
+	"author": "baron.bai <baron.bai@imile.me>",
+	"scripts": {
+		"dev": "umi dev PORT=6000",
+		"build": "umi build",
+		"postinstall": "umi setup",
+		"setup": "umi setup",
+		"start": "npm run dev"
+	},
+	"dependencies": {
+		"@emotion/react": "^11.11.4",
+		"@emotion/styled": "^11.11.5",
+		"@mui/material": "^5.16.0",
+		"@mui/styled-engine-sc": "6.0.0-alpha.18",
+		"@tanstack/react-query": "^5.50.1",
+		"lodash-es": "^4.17.21",
+		"react-hook-form": "^7.52.1",
+		"styled-components": "^6.1.11",
+		"umi": "^4.3.1",
+		"zustand": "^4.5.4"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"@umijs/plugins": "^4.3.1",
+		"typescript": "^5.5.3"
+	},
+	"peerDependencies": {
+		"react": "^17.0.0 || ^18.0.0",
+		"react-dom": "^17.0.0 || ^18.0.0"
+	}
 }
